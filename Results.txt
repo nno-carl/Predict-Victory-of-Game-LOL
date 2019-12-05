@@ -1,0 +1,223 @@
+number of target = 0 (team 1 win): 26077
+number of target = 1 (team 2 win): 25413
+
+number of features after preprocessing: 2979
+number of features after feature selection: 133
+
+average feature importance: 0.000336
+
+top 30 features with high importance:
+('t1_towerKills', 0.1297533175779303)
+('firstInhibitor_2', 0.10374101046842464)
+('firstBaron_2', 0.07715685147545973)
+('t2_towerKills', 0.07516705893714469)
+('t2_inhibitorKills', 0.07243279094862391)
+('firstInhibitor_1', 0.044119156607738595)
+('t1_inhibitorKills', 0.027660241441287797)
+('firstTower_2', 0.026182548533071778)
+('firstDragon_2', 0.024638238249625143)
+('firstTower_1', 0.024340991824399656)
+('firstDragon_1', 0.018388063733026087)
+('t1_dragonKills', 0.01665843999476313)
+('t2_dragonKills', 0.016653934083137752)
+('firstBaron_1', 0.014443464492514503)
+('firstInhibitor_0', 0.011383676227375196)
+('t1_baronKills', 0.010711738674025735)
+('t2_baronKills', 0.008961620825384207)
+('firstBaron_0', 0.008908224007966719)
+('firstRiftHerald_2', 0.008285418140692832)
+('gameDuration', 0.006192323789675696)
+('firstBlood_2', 0.0052290375026159365)
+('firstRiftHerald_1', 0.003233201297726029)
+('firstBlood_1', 0.0030024895374424227)
+('t2_riftHeraldKills', 0.0023211770010148993)
+('firstTower_0', 0.0020390914963970283)
+('firstRiftHerald_0', 0.0020097996487700043)
+('t1_riftHeraldKills', 0.0015906529648943531)
+('firstDragon_0', 0.0014542782956266159)
+('firstBlood_0', 0.0008669263798946417)
+('t2_champ4_sum1_4', 0.0007944786213613162)
+
+KNN predict accuracy: 0.882437
+KNN predict roc: 0.931614
+KNN predict precision: 0.884075
+KNN predict recall: 0.880181
+
+KNN accuracy: 0.883802
+KNN roc: 0.934589
+KNN precision: 0.883595
+KNN recall: 0.880612
+KNN 10-fold accuracy: 
+[0.89067961 0.8807767  0.87786408 0.88580307 0.88929889 0.89240629
+ 0.88327831 0.87315462 0.87762238 0.88714064]
+
+Decision Tree predict accuracy: 0.921473
+Decision Tree predict roc: 0.921474
+Decision Tree predict precision: 0.921056
+Decision Tree predict recall: 0.921891
+
+Decision Tree accuracy: 0.922334
+Decision Tree roc: 0.922305
+Decision Tree precision: 0.922457
+Decision Tree recall: 0.920002
+Decision Tree 10-fold accuracy: 
+[0.92019417 0.9207767  0.92543689 0.92114974 0.92406292 0.92542241
+ 0.91765391 0.92288267 0.91996892 0.92579643]
+
+Naive Bayes predict accuracy: 0.902246
+Naive Bayes predict roc: 0.956372
+Naive Bayes predict precision: 0.903352
+Naive Bayes predict recall: 0.900777
+
+Naive Bayes accuracy: 0.902505
+Naive Bayes roc: 0.956463
+Naive Bayes precision: 0.902946
+Naive Bayes recall: 0.899146
+Naive Bayes 10-fold accuracy: 
+[0.90097087 0.90407767 0.90368932 0.90697223 0.90405904 0.91202175
+ 0.8957079  0.89607615 0.8978244  0.9036519 ]
+
+Rule-based predict accuracy: 0.897585
+Rule-based predict roc: 0.923941
+Rule-based predict precision: 0.886914
+Rule-based predict recall: 0.911269
+
+Rule-based accuracy: 0.896679
+Rule-based roc: 0.923409
+Rule-based precision: 0.886120
+Rule-based recall: 0.907255
+Rule-based 10-fold accuracy: 
+[0.8972616  0.88891047 0.89629054 0.89842688 0.89531948 0.90269955
+ 0.88832783 0.9019227  0.89784424 0.89978637]
+
+Logistic Regression predict accuracy: 0.910339
+Logistic Regression predict roc: 0.962435
+Logistic Regression predict precision: 0.912489
+Logistic Regression predict recall: 0.907642
+
+Logistic Regression accuracy: 0.910701
+Logistic Regression roc: 0.962280
+Logistic Regression precision: 0.913051
+Logistic Regression recall: 0.905324
+Logistic Regression 10-fold accuracy: 
+[0.91281553 0.90834951 0.91242718 0.91629443 0.91221596 0.91648864
+ 0.90269955 0.90753691 0.90501166 0.91317016]
+
+Random Forest predict accuracy: 0.923157
+Random Forest predict roc: 0.975847
+Random Forest predict precision: 0.936406
+Random Forest predict recall: 0.907902
+
+Random Forest accuracy: 0.926510
+Random Forest roc: 0.978272
+Random Forest precision: 0.939728
+Random Forest recall: 0.909456
+Random Forest 10-fold accuracy: 
+[0.93145631 0.92349515 0.92660194 0.92891824 0.92581084 0.93163721
+ 0.92173238 0.92210567 0.92191142 0.93142968]
+
+knn-decision tree difference:
+[-0.02951456 -0.04       -0.04757282 -0.03534667 -0.03476403 -0.03301612
+ -0.03437561 -0.04972805 -0.04234654 -0.03865579]
+knn-decision tree: average = -0.038532 std = 0.006141
+t-test knn-decision tree: t-score = -17.561176 p-value = 0.000000
+-17.561176298198692 8.976271065227254e-13
+
+knn-naive bayes difference:
+[-0.01029126 -0.02330097 -0.02582524 -0.02116916 -0.01476015 -0.01961546
+ -0.0124296  -0.02292152 -0.02020202 -0.01651127]
+knn-naive bayes: average = -0.018703 std = 0.004788
+t-test knn-naive bayes: t-score = -7.286966 p-value = 0.000001
+-7.286966074781293 9.019766135868732e-07
+
+knn-rule based difference:
+[-0.00658199 -0.00813377 -0.01842646 -0.01262381 -0.00602059 -0.01029326
+ -0.00504952 -0.02876808 -0.02022186 -0.01264573]
+knn-rule based: average = -0.012877 std = 0.007173
+t-test knn-rule based: t-score = -5.102371 p-value = 0.000074
+-5.102370901884579 7.442978689641706e-05
+
+knn-logistic regression difference:
+[-0.02213592 -0.02757282 -0.03456311 -0.03049136 -0.02291707 -0.02408235
+ -0.01942125 -0.03438228 -0.02738928 -0.02602953]
+knn-logistic regression: average = -0.026898 std = 0.004811
+t-test knn-logistic regression: t-score = -10.826969 p-value = 0.000000
+-10.826969422285737 2.5942064006876873e-09
+
+knn-random forest difference:
+[-0.0407767  -0.04271845 -0.04873786 -0.04311517 -0.03651194 -0.03923092
+ -0.03845407 -0.04895105 -0.04428904 -0.04428904]
+knn-random forest: average = -0.042707 std = 0.003909
+t-test knn-random forest: t-score = -17.824760 p-value = 0.000000
+-17.82476014797758 6.960688774646147e-13
+
+decision tree-naive bayes difference:
+[0.0192233  0.01669903 0.02174757 0.01417751 0.02000388 0.01340066
+ 0.02194601 0.02680653 0.02214452 0.02214452]
+decision tree-naive bayes: average = 0.019829 std = 0.003886
+t-test decision tree-naive bayes: t-score = 10.856074 p-value = 0.000000
+10.856073969407833 2.4869558137511847e-09
+
+decision tree-rule based difference:
+[0.02293257 0.03186623 0.02914635 0.02272286 0.02874345 0.02272286
+ 0.02932608 0.02095997 0.02212468 0.02601006]
+decision tree-rule based: average = 0.025656 std = 0.003647
+t-test decision tree-rule based: t-score = 14.529981 p-value = 0.000000
+14.52998101907402 2.1932458245491327e-11
+
+decision tree-logistic regression difference:
+[0.00737864 0.01242718 0.01300971 0.00485531 0.01184696 0.00893377
+ 0.01495436 0.01534577 0.01495726 0.01262626]
+decision tree-logistic regression: average = 0.011634 std = 0.003328
+t-test decision tree-logistic regression: t-score = 6.806619 p-value = 0.000002
+6.806619480183877 2.2551715222858036e-06
+
+decision tree-random forest difference:
+[-0.01126214 -0.00271845 -0.00116505 -0.0077685  -0.00174791 -0.0062148
+ -0.00407846  0.000777   -0.0019425  -0.00563326]
+decision tree-random forest: average = -0.004175 std = 0.003406
+t-test decision tree-random forest: t-score = -2.646276 p-value = 0.016418
+-2.6462763577367183 0.016417545103734752
+
+naive bayes-rule based difference:
+[ 0.00370926959  0.0151672019  0.00739877854  0.00854534861
+  0.00873956108  0.00932219849  0.00932219849 -0.00584655736
+ -1.98437759e-05  0.00386553737]
+naive bayes-rule based: average = 0.005826 std = 0.005468
+t-test naive bayes-rule based: t-score = 2.634481 p-value = 0.016832
+2.6344813613453786 0.016831512952062026
+
+naive bayes-logistic regression difference:
+[-0.01184466 -0.00427184 -0.00873786 -0.0093222  -0.00815692 -0.00446689
+ -0.00699165 -0.01146076 -0.00718726 -0.00951826]
+naive bayes-logistic regression: average = -0.008196 std = 0.002430
+t-test naive bayes-logistic regression: t-score = -3.782771 p-value = 0.001363
+-3.782771307996732 0.0013627160680944924
+
+naive bayes-random forest difference:
+[-0.03048544 -0.01941748 -0.02291262 -0.02194601 -0.0217518  -0.01961546
+ -0.02602447 -0.02602953 -0.02408702 -0.02777778]
+naive bayes-random forest: average = -0.024005 std = 0.003395
+t-test naive bayes-random forest: t-score = -11.626739 p-value = 0.000000
+-11.62673931454069 8.3787015439348e-10
+
+rule based-logistic regression difference:
+[-0.01555393 -0.01943905 -0.01613664 -0.01786755 -0.01689648 -0.01378909
+ -0.01437172 -0.0056142  -0.00716741 -0.0133838 ]
+rule based-logistic regression: average = -0.014022 std = 0.004213
+t-test rule based-logistic regression: t-score = -6.628042 p-value = 0.000003
+-6.628041598965761 3.1959937340512225e-06
+
+rule based-random forest difference:
+[-0.03419471 -0.03458468 -0.0303114  -0.03049136 -0.03049136 -0.02893766
+ -0.03340454 -0.02018297 -0.02406718 -0.03164332]
+rule based-random forest: average = -0.029831 std = 0.004312
+t-test rule based-random forest: t-score = -14.834148 p-value = 0.000000
+-14.834148364269442 1.552368074003314e-11
+
+logistic regression-random forest difference:
+[-0.01864078 -0.01514563 -0.01417476 -0.01262381 -0.01359487 -0.01514857
+ -0.01903282 -0.01456876 -0.01689977 -0.01825952]
+logistic regression-random forest: average = -0.015809 std = 0.002139
+t-test logistic regression-random forest: t-score = -8.059613 p-value = 0.000000
+-8.059613464318087 2.204473581970941e-07
